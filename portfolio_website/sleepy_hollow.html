@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Map of Sleepy Hollow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+
+<!-- Lavendar Custom Color Scheme -->
+<style>
+  .w3-theme-l5 {color:#000 !important; background-color:#fcfafd !important}
+.w3-theme-l4 {color:#000 !important; background-color:#f6eff9 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ecdef3 !important}
+.w3-theme-l2 {color:#000 !important; background-color:#e3ceed !important}
+.w3-theme-l1 {color:#000 !important; background-color:#d9bde7 !important}
+.w3-theme-d1 {color:#000 !important; background-color:#bf90d6 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#ae73cb !important}
+.w3-theme-d3 {color:#fff !important; background-color:#9d56c0 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#632e7e !important}
+.w3-theme-d5 {color:#fff !important; background-color:#684877 !important}
+.w3-theme-d6 {color:#fff !important; background-color:#9e76b1 !important}
+.w3-theme-d7 {color:#fff !important; background-color:#aa8db3 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fcfafd !important}
+.w3-theme-dark {color:#fff !important; background-color:#733691 !important}
+.w3-theme-action {color:#fff !important; background-color:#733691 !important}
+
+.w3-theme {color:#000 !important; background-color:#d0ade1 !important}
+.w3-text-theme {color:#d0ade1 !important}
+.w3-border-theme {border-color:#d0ade1 !important}
+
+.w3-hover-theme:hover {color:#000 !important; background-color:#d0ade1 !important}
+.w3-hover-text-theme:hover {color:#d0ade1 !important}
+.w3-hover-border-theme:hover {border-color:#d0ade1 !important}
+</style>
+
+<!-- Sandy Custom Color Scheme -->
+<style>
+  .w3-theme-a5 {color:#000 !important; background-color:#fffefc !important}
+.w3-theme-a4 {color:#000 !important; background-color:#fdfbf4 !important}
+.w3-theme-a3 {color:#000 !important; background-color:#fcf7ea !important}
+.w3-theme-a2 {color:#000 !important; background-color:#faf3df !important}
+.w3-theme-a1 {color:#000 !important; background-color:#f9efd4 !important}
+.w3-theme-b1 {color:#000 !important; background-color:#f1dca3 !important}
+.w3-theme-b2 {color:#000 !important; background-color:#ebce7c !important}
+.w3-theme-b3 {color:#000 !important; background-color:#e6bf55 !important}
+.w3-theme-b4 {color:#000 !important; background-color:#e0b02e !important}
+.w3-theme-b5 {color:#fff !important; background-color:#c3971d !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fffefc !important}
+.w3-theme-dark {color:#fff !important; background-color:#c3971d !important}
+.w3-theme-action {color:#fff !important; background-color:#c3971d !important}
+
+.w3-theme {color:#000 !important; background-color:#f7ebca !important}
+.w3-text-theme {color:#f7ebca !important}
+.w3-border-theme {border-color:#f7ebca !important}
+
+.w3-hover-theme:hover {color:#000 !important; background-color:#f7ebca !important}
+.w3-hover-text-theme:hover {color:#f7ebca !important}
+.w3-hover-border-theme:hover {border-color:#f7ebca !important}
+</style>
+
+<!-- Body styling -->
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+p {font-family: "Cormorant", serif}
+.w3-third img{margin-bottom: 0; opacity: 0.8; cursor: pointer}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-third img:hover{opacity: 1}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.floatRight {
+  float:right;
+  margin-left:20px;
+}
+
+.floatRightClear {
+  float:right;
+  clear:right;
+  margin-left:20px;
+}
+
+</style>
+</head>
+<body class="w3-theme-a4 w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-theme-l1 w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-32 w3-center"><b>JOURNEY<br>OF TWO<br>MEMORIES<br>Map Highlight</b></h3>
+  <img src="images/Sleepy_Hollow_hires2.png" class="w3-opacity-min w3-hover-opacity-off" style="max-inline-size: 150px;" onclick="onClick(this)" alt="Reality and Fiction of Sleepy Hollow">
+  <h3 class="w3-padding-16"></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#summary" onclick="w3_close()" class="w3-bar-item w3-button">SUMMARY</a> 
+  <a href="#learn more" onclick="w3_close()" class="w3-bar-item w3-button">LEARN MORE</a> 
+  <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">DILNI ABEYRATHNE</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Scroll Down About Section -->
+  <!--<div class="w3-row" id="myGrid">
+    <div>
+      <img src="images/Sleepy_Hollow_part1.png" class="center" onclick="onClick(this)" alt="Reality and Fiction of the Legend of Sleepy Hollow">
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <h4 class="w3-center">SLEEPY HOLLOW: A FANTASTICAL REALITY</h4>
+        <p>I am a rising cartographer, geographer, and artist seeking to meld mapmaking with explorations of human thought processes, sustainability, environmentalism, and society. I am currently a student at the University of Kentucky, pursuing three degrees in Environmental & Sustainability Studies, Geography (with a minor in Mapping & GIS), and International Studies. During my years of undergraduate study, I engaged with several academic projects and commissions that utilized cartography, including making maps for the Documenting Racial Violence in Kentucky (DRVK) project, Mapshop, the Kentucky Geological Survey, and private commissions for three professors. </p>
+        <p>My cartography seeks to meld art, metaphor, and mapmaking into a dive into unique human understandings of the world and the environment. I love mapping both the realistic and the fictional, and have experimented at melding the two to create unique spatial realms. Aside from mapmaking, I’m an avid reader, writer, artist, and enjoy frolicking around in nature as much as possible, preferably among giant rocks and shifting forests.</p>
+      </div>
+
+      <div class="w3-center w3-padding-16"></div>
+
+      <img src="images/Sleepy_Hollow_part2.png" class="center" onclick="onClick(this)" alt="Reality and Fiction of the Legend of Sleepy Hollow">
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <h4 class="w3-center">THE MEMORIES BEHIND THE STORIES</h4>
+        <p>I am a rising cartographer, geographer, and artist seeking to meld mapmaking with explorations of human thought processes, sustainability, environmentalism, and society. I am currently a student at the University of Kentucky, pursuing three degrees in Environmental & Sustainability Studies, Geography (with a minor in Mapping & GIS), and International Studies. During my years of undergraduate study, I engaged with several academic projects and commissions that utilized cartography, including making maps for the Documenting Racial Violence in Kentucky (DRVK) project, Mapshop, the Kentucky Geological Survey, and private commissions for three professors. </p>
+        <p>My cartography seeks to meld art, metaphor, and mapmaking into a dive into unique human understandings of the world and the environment. I love mapping both the realistic and the fictional, and have experimented at melding the two to create unique spatial realms. Aside from mapmaking, I’m an avid reader, writer, artist, and enjoy frolicking around in nature as much as possible, preferably among giant rocks and shifting forests.</p>
+      </div>
+
+      <div class="w3-center w3-padding-16"></div>
+
+      <img src="images/Sleepy_Hollow_part3.png" class="center" onclick="onClick(this)" alt="Reality and Fiction of the Legend of Sleepy Hollow">
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <h4 class="w3-center">WHO WAS RIGHT?</h4>
+        <p>I am a rising cartographer, geographer, and artist seeking to meld mapmaking with explorations of human thought processes, sustainability, environmentalism, and society. I am currently a student at the University of Kentucky, pursuing three degrees in Environmental & Sustainability Studies, Geography (with a minor in Mapping & GIS), and International Studies. During my years of undergraduate study, I engaged with several academic projects and commissions that utilized cartography, including making maps for the Documenting Racial Violence in Kentucky (DRVK) project, Mapshop, the Kentucky Geological Survey, and private commissions for three professors. </p>
+        <p>My cartography seeks to meld art, metaphor, and mapmaking into a dive into unique human understandings of the world and the environment. I love mapping both the realistic and the fictional, and have experimented at melding the two to create unique spatial realms. Aside from mapmaking, I’m an avid reader, writer, artist, and enjoy frolicking around in nature as much as possible, preferably among giant rocks and shifting forests.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Zigzag About Section -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <!--HOW TO switch image from left to right: just move code over/under description-->
+  <div class="w3-animate-opacity w3-row w3-padding-64" id="summary">
+    <h1 class="w3-center">SLEEPY HOLLOW'S FANTASTICAL REALITY</h1>
+    <p class="w3-center w3-large">Inspiration for this map came in when I noticed just how different recollections of the same memory or story could be between different people. So, I set about mapping one particular story—Washington Irving’s “The Legend of Sleepy Hollow”—and the differing paths that my friend and I remembered.  </p>
+    <br>
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/Sleepy_Hollow_part1.png" class="w3-padding-16 w3-round w3-image w3-opacity-min w3-hover-opacity-off" alt="Sleepy Hollow Map Part 1" width="600" height="750" onclick="onClick(this)">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">Mixing Reality and Fiction</h2><br>
+      <p class="w3-center w3-large">This part of the map explores the spatial relationships between my friend and I’s recollections, overlaid atop a background of the real Sleepy Hollow’s geography and townscape and filled with marks of the imaginary Sleepy Hollow’s landscape (with lots of artistic liberty, of course). In the real Sleepy Hollow realm, a stylized hillshade and sharp, geometric representations of infrastructure are featured. By contrast, the fantasy Sleepy Hollow realm features soft outlines, imperfect brush strokes, and custom-drawn graphics (that headless horseman is my pride and joy).</p>
+    </div>
+   
+    <h2>&nbsp;</h2>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">Narrative Tumbles</h2><br>
+      <p class="w3-center w3-large">It’s interesting to see the ways in which my friend and I’s recollections both differed from and matched the true narrative written by Washing Irving. There are plot points both of us forgot, and some both of us added, like how I distinctly remembered Ichabod dying and how my friend distinctly remembered Ichabod escaping into the forest, or how I forgot Ichabod had a lover in Katrina van Tassel and my friend forgot Ichabod was a schoolteacher. They’re factually flawed stories, but no less true to our memories.
+      </p>
+    </div>
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/Sleepy_Hollow_part2.png" class="w3-padding-16 3-round w3-image w3-opacity-min w3-hover-opacity-off" alt="Sleepy Hollow Map Part 2" width="600" height="750" onclick="onClick(this)">
+    </div>
+
+    
+    <div class="w3-row-padding w3-padding-large"></div>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/Sleepy_Hollow_part3.png" class="w3-padding-16 w3-round w3-image w3-opacity-min w3-hover-opacity-off" alt="Sleepy Hollow Map Part 3" width="600" height="750" onclick="onClick(this)">
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">Measuring the Memories</h2><br>
+      <p class="w3-center w3-large">Three coincidences! Now, is that good or bad? Neither, of course—this part of the map is dedicated to graphing out the direction our memories went in regarding the legend. The timeline measures (both axes) are taken from the true narrative, and our narratives were plotted within those parameters. Sometimes we were correct, sometimes not, and sometimes we even coincided! But, the accuracy of the narratives doesn’t matter as much as the nature of the memories we had—the pathways of memories can be ever-shifting, but that’s what makes them fun! I mean, how else would I have recalled Ichabod (bravely) battling the undead?</p>
+    </div>
+  </div>
+</div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-16"></div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- About section -->
+  <div class="w3-container w3-2018-crocus-petal w3-center w3-text-light-gray w3-padding-32" id="learn more">
+    <h4><b>THE INSPIRATION: Movie Narrative Charts by Randall Munroe (xkcd)</b></h4>
+    <img src="https://imgs.xkcd.com/comics/movie_narrative_charts_large.png" alt="Movie Narrative Charts by Randall Munroe (xkcd)" class="w3-image w3-padding-32" width="600" height="500" onclick="onClick(this)">
+    <div class="w3-content w3-justify w3-large" style="max-width:600px">
+      <p>This was the map that inspired both the idea and the style of visualization for my Sleepy Hollow map. It’s extremely complex and compelling, what with its meticulous narrative pathing and connections to space. Explore and learn more about it here:</p>
+      <a href="https://xkcd.com/657/" navigate="Movie Narrative Charts (xkcd)">
+        <button class="w3-button w3-theme-d7 w3-padding-large w3-margin-top w3-margin-bottom">Movie Narrative Charts (xkcd)</button>
+      </a>
+      <p>Note: The original work & image are attributed to Randall Munroe (xkcd). Use of this work is permitted under <a href="https://creativecommons.org/licenses/by-nc/2.5/">Creative Commons Attribution-NonCommercial 2.5 Generic (CC BY-NC 2.5).</a> No changes have been made to either the original work or image.</p>
+      <hr class="w3-opacity">
+    </div>
+    
+    <br>
+
+    <h4><b>THE LEGEND OF SLEEPY HOLLOW: Story by Washington Irving</b></h4>
+    <img src="images/John_Quidor_-_The_Headless_Horseman_Pursuing_Ichabod_Crane_-_Google_Art_Project.jpg" alt="The Headless Horseman Pursuing Ichabod Crane by John Quidor (1858)" class="w3-image w3-padding-32" width="600" height="500" onclick="onClick(this)">
+    <div class="w3-content w3-justify w3-large" style="max-width:600px">
+      <p>The Legend of Sleepy Hollow is truly a compelling and chilling narrative! Aside from being a great story, it also painted the eerie, storybook atmosphere of my map. If you are interested, check out the full story here, hosted by the volunteer digital library Project Gutenberg:</p>
+      <a href="https://www.gutenberg.org/files/41/41-h/41-h.htm" navigate="The Legend of SLeepy Hollow">
+        <button class="w3-button w3-theme-d7 w3-padding-large w3-margin-top w3-margin-bottom">The Legend of Sleepy Hollow</button>
+      </a>
+      <p>Note: The painting by John Quidor (1858) and the story by Washington Irving (1819) are both recognized as public domain works.</p>
+      <hr class="w3-opacity">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-theme-a4" id="resources">  
+    <div class="w3-row-padding">
+      <div class="w3-third w3-center">
+        <h3>INFO</h3>
+        <p>Maps in this portfolio were made in classes and projects associated with the University of Kentucky. Commissioned maps are associated with the University of Kentucky and Scripps College.</p>      
+      </div>
+    
+      <div class="w3-third w3-center">
+        <h3>FIND ME</h3>
+        <p>
+          <a href="https://github.com/DTAbeyrathne">My GitHub</a>
+        </p> 
+        <p>
+          <a href="https://www.linkedin.com/in/dilni-abeyrathne-1b0152232/">My LinkedIn</a>
+        </p> 
+      </div>
+  
+      <div class="w3-third w3-center">
+        <h3>OTHER RESOURCES</h3>
+        <p>
+          Explore Mapping & GIS at the University of Kentucky!
+        </p>
+        <p>
+          <a href="https://uky-gis.github.io/#mapshop">UKy Mapping & GIS</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-theme-d5 w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>
