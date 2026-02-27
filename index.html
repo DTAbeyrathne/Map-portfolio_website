@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<!-- W3.CSS Color Library: 2018 Fashion Colors -->
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css"> 
 
 <!-- Lavendar Custom Color Scheme -->
 <style>
@@ -76,7 +76,7 @@ h3,p {font-family: "Cormorant", sans-serif}
 <body class="w3-theme-a4 w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-theme-l1 w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+<nav class="w3-sidebar w3-bar-block w3-theme-l1 w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:250px;font-weight:bold" id="mySidebar"><br>
   <h3 class="w3-padding-64 w3-center"><b>DILNI<br>ABEYRATHNE<br>CARTOGRAPHY</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <a href="#myGrid" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
@@ -98,7 +98,7 @@ h3,p {font-family: "Cormorant", sans-serif}
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+<div class="w3-main" style="margin-left:250px">
 
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:83px"></div>
@@ -115,7 +115,7 @@ h3,p {font-family: "Cormorant", sans-serif}
 
     <div class="w3-third">
       <img src="resized_images/M5_Cumberland_Falls_resized.jpg" style="width:100%" onclick="onClick(this)" alt="The Elegant Falls - A LiDAR Visualization">
-      <img src="images/M6_BentBranchMTR.jpg" style="width:100%" onclick="onClick(this)" alt="Aftereffects of Mountaintop Removal and Valley Fills">
+      <img src="hires_images/M6_BentBranchMTR.jpg" style="width:100%" onclick="onClick(this)" alt="Aftereffects of Mountaintop Removal and Valley Fills">
       <img src="resized_images/L1_Weeksbury_layout_fullres_resized.jpg" style="width:100%" onclick="onClick(this)" alt="Bridges and Population Density in the Weeksbury Watershed">
       <img src="resized_images/Sahara_eye_map2_resized.jpg" style="width:100%" onclick="onClick(this)" alt="The Ancient Conspiracy and the Geological Eye">
       <img src="resized_images/Lynchings_resized.jpg" style="width:100%" onclick="onClick(this)" alt="Documented Lynchings in Kentucky">
@@ -140,7 +140,7 @@ h3,p {font-family: "Cormorant", sans-serif}
   <div class="w3-center w3-padding-16" id="research">
     <h4><b>RESEARCH MAPS</b></h4>
     <img src="resized_images/KGS_Finalized_Poster_resized.jpg" style="width:100%" onclick="onClick(this)" alt="Landslide Research with Kentucky Geological Survey - Final Research Poster">
-    <a href='images/KGS_Finalized_Poster.png' class="linkbox">High Resolution Version</a>
+    <a href='hires_images/KGS_Finalized_Poster.png' class="linkbox">High Resolution Version</a>
   </div>
 
   <!-- Web Map -->
@@ -171,13 +171,13 @@ h3,p {font-family: "Cormorant", sans-serif}
   <!-- About section -->
   <div class="w3-container w3-2018-crocus-petal w3-center w3-text-light-gray w3-padding-32" id="about">
     <h4><b>ABOUT ME</b></h4>
-    <img src="images/Portrait_picture.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="500">
+    <img src="other_img/Portrait_picture.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="500">
     <div class="w3-content w3-justify w3-large" style="max-width:600px">
       <h4>Dilni Abeyrathne</h4>
       <p>I am a rising cartographer, geographer, and artist seeking to meld mapmaking with explorations of human thought processes, sustainability, environmentalism, and society. I am also a graduate of the University of Kentucky with three Bachelor's degrees in Environmental & Sustainability Studies, Geography (with a minor in Mapping & GIS), and International Studies. During my years of undergraduate study, I engaged with several academic projects and commissions that utilized cartography, including making maps for the Documenting Racial Violence in Kentucky (DRVK) project, Mapshop, the Kentucky Geological Survey, and private commissions for three professors. </p>
       <p>My cartography seeks to meld art, metaphor, and mapmaking into a dive into unique human understandings of the world and the environment. I love mapping both the realistic and the fictional, and have experimented at mixing the two to create unique spatial realms. Aside from mapmaking, I’m an avid reader, writer, artist, and enjoy frolicking around in nature as much as possible, preferably among giant rocks and shifting forests.</p>
       <p>
-        <a href="images/GS_Curriculum_Vitae_DilniAbeyrathne.pdf" download="curriculum vitae">
+        <a href="docs/GS_Curriculum_Vitae_DilniAbeyrathne.pdf" download="curriculum vitae">
           <button class="w3-button w3-theme-d7 w3-padding-large w3-margin-top w3-margin-bottom">Download Curriculum Vitae (CV)</button>
         </a>
       </p>
@@ -252,8 +252,7 @@ function onClick(element) {
       x.className = x.className.replace("w3-row-padding", "w3-row");
     }
   }
-
-  </script>
+</script>
 
 </body>
 </html>
