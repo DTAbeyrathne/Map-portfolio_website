@@ -67,7 +67,7 @@
 <!-- Body styling -->
 <style>
 body,h1,h2,h4,h5 {font-family: "Raleway", sans-serif}
-h3,p {font-family: "Cormorant", sans-serif}
+h3,p {font-family: "Cormorant", sans-serif; font-size: 1.25em}
 .w3-third img{margin-bottom: 0; opacity: 0.8; cursor: pointer}
 .w3-row-padding img {margin-bottom: 12px}
 .w3-third img:hover{opacity: 1}
@@ -112,54 +112,148 @@ h3,p {font-family: "Cormorant", sans-serif}
            onclick="onClick(this)" 
            alt="narrative map of the Legend of Sleepy Hollow melding real datasets with hand-drawn elements of the legend"
            data-title="Reality and Fiction of the Legend of Sleepy Hollow"
-           data-description="Wow what a cool map."
+           data-description="This map visualizes the narrative of the Legend of Sleepy Hollow as remembered through me and a friend, 
+              with the real narrative pathway overlaid. It utilizes both real-world data (buildings, river, roads, and 
+              elevation) along with hand-drawn illustrations and pathing to create a unique narrative map of the spatiality 
+              of the Legend of Sleepy Hollow. <br> <br>
+              The bare-data map was made in QGIS with illustrations, narratives, and graph made in Adobe Illustrator. The
+              bare-data map in QGIS only featured the hillshade, river, and roads, which was put together and exported into
+              Illustrator, where the real-world data was stylized with a canvas texture and buildings were manually added by
+              tracing over the building footprints of Sleepy Hollow. Illustrations, Ichabod's pathing, the narratives, and the
+              graph were all hand-drawn in Illustrator (RIP to my fingers and eyes doing this on a trackpad). Find more 
+              information about it by clicking <strong>Learn More</strong> below!"
            data-footer='<a href="pages/sleepy_hollow.html">Learn More</a>'>
       <img src="resized_images/spooky_places_map_updated_resized.jpg" 
            style="width:100%" 
            onclick="onClick(this)" 
            alt="Spooky Haunted and Abandoned Spots in Kentucky"
-           data-title="Spooky Haunted and Abandoned Spots in Kentucky"
-           data-description="A map of haunted and abandoned places in Kentucky."
+           data-title="Alleged Haunted and Abandoned Spots in Kentucky"
+           data-description="Ever wondered where all the most famous haunted and abandoned spots are in Kentucky? This map shows a 
+           selection of some of the most popular alleged haunted and abandoned spots in Kentucky, sourced from various websites and 
+           news articles referencing hauntings. The entire map is stylized thematically to represent a more spooky atmosphere. <br><br>
+           The map was made entirely in QGIS, including all the stylings and design elements! The haunted and abaondoned data was first 
+           compiled into a CSV and added into a basemap of Kentucky (state border, counties, major roads, and rivers). The fun part is 
+           that the shaded outlines on the edge of Kentucky was added through a second, starburst-filled Kentucky border layer. Afterwards,
+           all other stylings and text were added in QGIS and in Print Composer. Find more information about it by clicking <strong>Learn More</strong> below!"
            data-footer='<a href="pages/Spooky_places.html">Learn More</a>'>
       <img src="resized_images/Final_map2-5-01_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Sri Lanka's CKDu Hotspots">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Sri Lanka's CKDu Hotspots and Agroecological Zones"
+           data-title="Sri Lanka's CKDu Hotspots and Agroecological Zones"
+           data-description="A map of hotspots of Chronic Kidney Disease of Unknown Etiology (CKDu) and their associated agroecological zones in Sri Lanka."
+           data-footer=''>
       <img src="resized_images/Census_analysis_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Kentucky's 2010 vs. 2020 Census in Changes">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Kentucky's 2010 vs. 2020 Census in Changes"
+           data-title="Kentucky's 2010 vs. 2020 Census in Changes"
+           data-description="A map showing changes in Kentucky's census data between 2010 and 2020."
+           data-footer=''>
       <img src="resized_images/KY_haunted_600dpi_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="All of Kentucky's Alleged Haunted Locations">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="All of Kentucky's Alleged Haunted Locations"
+           data-title="All of Kentucky's Alleged Haunted Locations"
+           data-description="A map of all of Kentucky's alleged haunted locations, sourced from the Kentucky"
+           data-footer=''>
     </div>
 
     <div class="w3-third">
       <img src="resized_images/M5_Cumberland_Falls_resized.jpg" 
-          style="width:100%" onclick="onClick(this)" alt="The Elegant Falls - A LiDAR Visualization 
-              <a href=&#34;pages/cumberland_falls.html&#34;>(Learn More)</a>">
+          style="width:100%" 
+          onclick="onClick(this)" 
+          alt="The Elegant Falls - A LiDAR Visualization"
+          data-title="The Elegant Falls - A LiDAR Visualization"
+          data-description="A LiDAR visualization of the elegant falls in Kentucky."
+          data-footer='<a href="pages/cumberland_falls.html">Learn More</a>'>
       <img src="hires_images/M6_BentBranchMTR.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Aftereffects of Mountaintop Removal and Valley Fills">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Aftereffects of Mountaintop Removal and Valley Fills"
+           data-title="Aftereffects of Mountaintop Removal and Valley Fills"
+           data-description="A map showing the aftereffects of mountaintop removal and valley fills in Kentucky."
+           data-footer=''>
       <img src="resized_images/L1_Weeksbury_layout_fullres_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Bridges and Population Density in the Weeksbury Watershed">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Bridges of the Weeksbury Watershed"
+           data-title="Bridges and Population Density in the Weeksbury Watershed"
+           data-description="A map showing bridges and population density in the Weeksbury watershed."
+           data-footer=''>
       <img src="resized_images/Sahara_eye_map2_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="The Ancient Conspiracy and the Geological Eye">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="The Ancient Conspiracy and the Geological Eye"
+           data-title="The Ancient Conspiracy and the Geological Eye"
+           data-description="A map showing the ancient conspiracy and the geological eye."
+           data-footer=''>
       <img src="resized_images/Lynchings_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Documented Lynchings in Kentucky">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Documented Lynchings in Kentucky"
+           data-title="Documented Lynchings in Kentucky"
+           data-description="A map showing documented lynchings in Kentucky."
+           data-footer=''>
       <img src="resized_images/Censusdemo_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Black Population in Kentucky (1880-2020)">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Black Residents in Kentucky (1880-2020)"
+           data-title="Black Residents in Kentucky (1880-2020)"
+           data-description="A map showing the black residents in Kentucky over time."
+           data-footer=''>
     </div>
     
     <div class="w3-third">
       <img src="resized_images/Dream_map_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Fantasy Dream Landscape with Real-World Data">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Dream Landscape with Real-World Data"
+           data-title="Dream Landscape with Real-World Data"
+           data-description="A map showing a dream landscape with real-world data."
+           data-footer=''>
       <img src="resized_images/M4_landcover_map.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Kentucky's Unique Landcover">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Kentucky's Unique Landcover"
+           data-title="Kentucky's Unique Landcover"
+           data-description="A map showing Kentucky's unique landcover."
+           data-footer=''>
       <img src="resized_images/L2_three_bridges_fullres_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Snapshot of Three Bridges at the Weeksbury Watershed">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Snapshot of Three Bridges at the Weeksbury Watershed"
+           data-title="Snapshot of Three Bridges at the Weeksbury Watershed"
+           data-description="A snapshot of three bridges at the Weeksbury watershed."
+           data-footer=''>
       <img src="resized_images/Final-Map-01_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Light Pollution vs. Connections to Nature">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="U.S. Light Pollution vs. Connections to Nature"
+           data-title="Light Pollution vs. Connections to Nature"
+           data-description="A map showing light pollution and connections to nature."
+           data-footer=''>
       <img src="resized_images/Final_Map3-01_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="Tornado Troubles">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="Tornados and Property Damage in the U.S."
+           data-title="Tornados and Property Damage in the U.S. from 1950 to 2019"
+           data-description="A map showing tornados and property damage in the U.S. from 1950 to 2019."
+           data-footer=''>
       <img src="resized_images/surveillance_with_descriptions-01_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="U.S. Campus Spying Incidents">
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="U.S. Campus Spying Incidents"
+           data-title="U.S. Campus Spying Incidents"
+           data-description="A map showing U.S. campus spying incidents."
+           data-footer=''>
       <img src="resized_images/New_Orleans_map_final-01_resized.jpg" 
-           style="width:100%" onclick="onClick(this)" alt="New Orleans Carceral vs. Freedom Sites">    
+           style="width:100%" 
+           onclick="onClick(this)" 
+           alt="New Orleans Carceral vs. Freedom Sites"
+           data-title="New Orleans Carceral vs. Freedom Sites"
+           data-description="A map showing New Orleans carceral vs. freedom sites."
+           data-footer=''>    
     </div>
   </div>
 
@@ -298,9 +392,9 @@ function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   // Header
-  document.getElementById("modal-header").textContent = element.dataset.title;
+  document.getElementById("modal-header").innerHTML = element.dataset.title;
   // Description (only visible in modal)
-  document.getElementById("caption").textContent = element.dataset.description;
+  document.getElementById("caption").innerHTML = element.dataset.description;
   // Footer
   document.getElementById("modal-footer").innerHTML = element.dataset.footer || "";
 }
